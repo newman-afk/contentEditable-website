@@ -1,0 +1,47 @@
+.advantages {
+  color: var(--White);
+  text-align: center;
+  @media (min-width: 768px) {
+    width: 70%;
+    min-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantage {
+    width: 100%;
+    padding: 1.6rem;
+    margin-top: 2rem;
+    @media (min-width: 768px) {
+      width: 50%;
+      flex-grow: 1;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+
+    img {
+      height: 4rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      color: var(--little-dark-white);
+      @media (min-width: 768px) {
+        width: 50%;
+        min-width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

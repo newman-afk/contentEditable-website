@@ -1,0 +1,45 @@
+header {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+
+  @media (min-width: 768px) {
+    padding: 3rem;
+  }
+  .logo {
+    width: 5rem;
+    object-fit: contain;
+
+    @media (min-width: 768px) {
+      width: 10rem;
+    }
+  }
+
+  .header-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    @media (min-width: 768px) {
+      gap: 3rem;
+    }
+
+    a,
+    button {
+      border: none;
+      background-color: transparent;
+      color: var(--little-dark-white);
+      text-decoration: none;
+    }
+  }
+
+  .bg {
+    width: 100vw;
+
+    z-index: 0;
+    object-fit: contain;
+  }
+}

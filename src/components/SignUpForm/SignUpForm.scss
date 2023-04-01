@@ -1,0 +1,75 @@
+.form-container {
+  margin-top: 10rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--Dark-Blue-main-background) 50%,
+    var(--Dark-Blue-footer-background) 50%
+  );
+  form {
+    border-radius: 0.5rem;
+    color: var(--White);
+    text-align: center;
+
+    padding: 2rem 1.5rem;
+
+    background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 768px) {
+      width: 65%;
+      padding: 2rem 5rem;
+    }
+
+    p {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.35rem;
+      color: var(--little-dark-white);
+      @media (min-width: 768px) {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .flex {
+      @media (min-width: 768px) {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+    }
+    input,
+    button {
+      border: none;
+      width: 100%;
+      padding: 1rem 1.5rem;
+      border-radius: 5rem;
+    }
+    input {
+      outline: none;
+      margin-bottom: 1.5rem;
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+    input::placeholder {
+      opacity: 0.4;
+    }
+    button {
+      color: white;
+      font-weight: 700;
+      background-image: linear-gradient(
+        to right,
+        var(--Cyan-inside-call-to-action-gradient),
+        var(--Blue-inside-call-to-action-gradient)
+      );
+      @media (min-width: 768px) {
+        width: 70%;
+        min-width: 180px;
+      }
+    }
+  }
+}
